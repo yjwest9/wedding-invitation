@@ -4,7 +4,7 @@
 
 :root {
   color: #292524;
-  background: #e7e5e4;
+  background: #dfe8cf;
   font-family:
     Pretendard,
     -apple-system,
@@ -27,6 +27,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
+  background: #dfe8cf;
 }
 
 #root {

@@ -11,25 +11,25 @@ function GiftAccount() {
   }
 
   return (
-    <section className="px-7 py-16 text-center">
+    <section className="bg-[#fffef9] px-8 py-16 text-center">
       <SectionTitle label="THANKS" title="마음 전하실 곳" />
-      <p className="mt-5 text-sm leading-6 text-[#59624f]">
+      <p className="mt-5 text-xs leading-6 text-[#68715f]">
         축하의 마음을 전하고 싶은 분들을 위해 계좌 정보를 준비했습니다.
       </p>
 
-      <div className="mt-8 space-y-3 text-left">
+      <div className="mt-8 space-y-2 text-left">
         {accounts.map((account) => {
           const isOpen = openSide === account.side
 
           return (
             <div
               key={account.side}
-              className="overflow-hidden rounded-md border border-[#c7c9b8] bg-[#fbfaf6] shadow-sm"
+              className="overflow-hidden border border-[#dce3d2] bg-white shadow-sm shadow-[#d8dfcc]/40"
             >
               <button
                 type="button"
                 onClick={() => setOpenSide(isOpen ? null : account.side)}
-                className="flex w-full items-center justify-between px-5 py-4 text-sm font-semibold text-[#3e4937]"
+                className="flex w-full items-center justify-between px-4 py-3 text-xs font-semibold text-[#4d5745]"
               >
                 <span>{account.side} 계좌 보기</span>
                 <span className={`transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
@@ -43,15 +43,15 @@ function GiftAccount() {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <div className="border-t border-[#d8d9cc] px-5 py-4 text-sm text-[#59624f]">
-                    <p className="font-semibold text-[#263222]">{account.name}</p>
+                  <div className="border-t border-[#e7eadf] px-4 py-4 text-xs text-[#68715f]">
+                    <p className="font-semibold text-[#3d4535]">{account.name}</p>
                     <p className="mt-2">
                       {account.bank} {account.number}
                     </p>
                     <button
                       type="button"
                       onClick={() => copyAccount(account)}
-                      className="mt-4 w-full rounded-md bg-[#23462d] py-3 font-semibold text-white"
+                      className="mt-4 w-full bg-[#9fb879] py-3 font-semibold text-white"
                     >
                       계좌 복사
                     </button>

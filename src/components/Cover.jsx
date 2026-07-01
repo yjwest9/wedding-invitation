@@ -1,4 +1,4 @@
-import coverImage from '../assets/cover_martinique.png'
+import coverImage from '../assets/cover_martinique.jpg'
 
 function Cover() {
   return (
@@ -6,11 +6,10 @@ function Cover() {
       <img
         src={coverImage}
         alt="초록 들판에 앉아 있는 신랑 신부"
-        className="-my-6 block w-full animate-cover-float"
+        width="930"
+        height="1692"
+        className="-my-6 block w-full"
       />
-      <div className="absolute inset-x-0 bottom-6 flex justify-center">
-        <span className="h-9 w-px animate-bounce bg-white/70" />
-      </div>
     </section>
   )
 }

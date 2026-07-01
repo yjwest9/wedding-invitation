@@ -5,8 +5,8 @@ export default {
     extend: {
       keyframes: {
         'cover-float': {
-          '0%': { transform: 'scale(1.04)', opacity: '0.85' },
-          '100%': { transform: 'scale(1)', opacity: '1' },
+          '0%': { transform: 'scale(1.08)', opacity: '0.9' },
+          '100%': { transform: 'scale(1.03)', opacity: '1' },
         },
         'soft-pop': {
           '0%': { transform: 'translateY(18px) scale(0.98)', opacity: '0' },
